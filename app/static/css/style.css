@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-
-  <meta charset="UTF-8">
-
-  <title>CodePen - Random Login Form</title>
-
-    <style>
 @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 
@@ -31,7 +21,7 @@ body{
 	height: auto;
 	background-image: url(http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg);
 	background-size: cover;
-	filter: blur(5px);
+	-webkit-filter: blur(5px);
 	z-index: 0;
 }
 
@@ -72,9 +62,36 @@ body{
 	top: calc(50% - 75px);
 	left: calc(50% - 50px);
 	height: 150px;
-	width: 600px;
+	width: 350px;
 	padding: 10px;
 	z-index: 2;
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
 }
 
 .login input[type=button]{
@@ -121,33 +138,3 @@ body{
 ::-moz-input-placeholder{
    color: rgba(255,255,255,0.6);
 }
-</style>
-
-<!--    <script src="js/prefixfree.min.js"></script>-->
-
-</head>
-
-<body>
-
-  <div class="body"></div>
-		<div class="grad"></div>
-	
-		<br>
-		<div class="login">
-			<form action="login" method="get">
-        <h2>Please sign in</h2>
-        <h2><label for="inputEmail">Email address</label></h2>
-        <input type="text" id="inputEmail" placeholder="username"   size="50" name="user" >
-        <h2><label for="inputPassword">Password</label></h2>
-        <input    type="password" id="inputPassword" placeholder="password" size="50" name="password" >
-
-        <div class="checkbox">
-        </div>
-        <button class="btn btn-lg btn-primary btn-block"   style="margin:5px" type="submit">Login in</button>
-      </form>
-		</div>
-  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
-
-</body>
-
-</html>
